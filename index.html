@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<script>
+    tailwind.config ={
+        theme: {
+            fontFamily:{
+                rubik:["Rubik", sans-serif]
+            }
+        }
+    }
+</script>
+    <title>Tailwind Css</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <!-- Colors -->
+    <div class="bg-slate-900 text-yellow-100">
+        Lorem ipsum 
+        dolor sit amet consectetur, 
+        adipisicing elit. Totam, laborum?
+    </div>
+    <div class="bg-gray-900 text-blue-100">
+        Lorem ipsum 
+        dolor sit amet consectetur, 
+        adipisicing elit. Totam, laborum?
+    </div>
+    <div class="bg-yellow-900 text-white-100">
+        Lorem ipsum 
+        dolor sit amet consectetur, 
+        adipisicing elit. Totam, laborum?
+    </div>
+    <div class="bg-indigo-900 text-black-100">
+        Lorem ipsum 
+        dolor sit amet consectetur, 
+        adipisicing elit. Totam, laborum?
+    </div>
+
+    <!-- Border -->
+
+    <input type="text" class="border border-indigo-900"/>
+
+    <!-- arbitrary colors -->
+    <input type="text" class="border border-[red]"/>
+    <input type="text" class="border border-[#868767]"/>
+
+    <!-- Space And COntainers -->
+    <!-- in tailwind 4 = 1rem and as a pixel = 16px -->
+
+    <div class="m-10">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quibusdam laudantium facilis odio reiciendis culpa, fugiat 
+        possimus corrupti hic explicabo soluta.
+    </div>
+    <!-- x = xaccess = horizontal, y= vertical -->
+    <div class="mx-10">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quibusdam laudantium facilis odio reiciendis culpa, fugiat 
+        possimus corrupti hic explicabo soluta.
+    </div>
+    <div class="bg-green-300 pt-10 pl-10">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quibusdam laudantium facilis odio reiciendis culpa, fugiat 
+        possimus corrupti hic explicabo soluta.
+    </div>
+
+    <!-- space between
+
+    <div class="flex space-x-2 mt-4">
+        <div class="bg-red-100">Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Veniam, eos.</div>
+        <div class="bg-red-100">Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Veniam, eos.</div>
+        <div class="bg-red-100">Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Veniam, eos.</div>
+    </div>
+
+    Typography
+
+    <p class="text-sm bg-yellow-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        A, at?</p>
+    <p class="text-base bg-green-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        A, at?</p>
+    <p class="text-lg bg-blue-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        A, at?</p>
+    <p class="text-xl bg-indigo-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        A, at?</p>
+    <p class="text-2xl bg-slate-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        A, at?</p>
+    <p class="text-7xl bg-slate-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        A, at?</p> -->
+
+        <!-- Font-Family -->
+        <div class="mt-10">
+            <p class="font-sarif">Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Incidunt, unde!</p>
+            <p class="font-sans">Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Incidunt, unde!</p>
+            <p class="font-mono">Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Incidunt, unde!</p>
+            <p class="font-rubik">Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Incidunt, unde!</p>
+        </div>
+
+        <!-- Font Weight -->
+        <div class="m-12">
+        <P class="font-light">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, tempora!
+        </P>
+        <P class="font-bold">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, tempora!
+        </P>
+        <P class="font-medium">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, tempora!
+        </P>
+        <P class="font-semibold">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, tempora!
+        </P>
+        <P class="font-extrabold">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, tempora!
+        </P>
+        </div>
+
+        <!-- text alignment -->
+        <div class="m-12">
+            <p class="text-left">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, optio.
+            </p>
+            <p class="text-center">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, optio.
+            </p>
+            <p class="text-right">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, optio.
+            </p>
+        </div>
+
+        <!-- Width -->
+
+        <div class="m-12">
+            <div class="w-4 bg-indigo-100">Width in Tailwind</div>
+            <div class="w-10 bg-green-100">Width in Tailwind</div>
+            <div class="w-[200px] bg-red-100">Width in Tailwind</div>
+        </div>
+
+        <!-- percentage -->
+
+        <div class="m-12">
+            <div class="bg-green-300 w-1/2">Percentage in tailwind CSS</div>
+            <div class="bg-red-300 w-1/3">Percentage in tailwind CSS</div>
+            <div class="bg-indigo-300 w-1/4">Percentage in tailwind CSS</div>
+        </div>
+
+        <!-- View Port -->
+
+        <div class="bg-blue-300 h-screen">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Asperiores laudantium architecto quos explicabo dolores doloribus 
+            id adipisci molestias deserunt sint?
+        </div>
+
+        <!-- BAckground and Shadows -->
+
+        <div class="m-12">
+            <div class="h-96 bg-cover bg-no-repeat" 
+            style="background-image: url('https://images.pexels.com/photos/3427774/pexels-photo-3427774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')";>
+        </div>
+        </div>
+
+        <!-- Grediant Color -->
+
+        <div class="m-12 ">
+            <div class="h-24 bg-gradient-to-r from-green-300 to-blue-400"></div>
+        </div>
+
+        <!-- shadows -->
+        <div class="m-12 space-y-10">
+            <div class="bg-white w-64 h-64 shadow">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 Aliquam vitae quos qui beatae totam, tempora repellat nisi 
+                 distinctio quis ab!
+            </div>
+            <div class="bg-white w-64 h-64 shadow-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 Aliquam vitae quos qui beatae totam, tempora repellat nisi 
+                 distinctio quis ab!
+            </div>
+            <div class="bg-white w-64 h-64 shadow-lg">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 Aliquam vitae quos qui beatae totam, tempora repellat nisi 
+                 distinctio quis ab!
+            </div>
+            <div class="bg-white w-64 h-64 shadow-xl">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 Aliquam vitae quos qui beatae totam, tempora repellat nisi 
+                 distinctio quis ab!
+            </div>
+            <div class="bg-white w-64 h-64 shadow-2xl">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 Aliquam vitae quos qui beatae totam, tempora repellat nisi 
+                 distinctio quis ab!
+            </div>
+        </div>
+
+
+        <!-- Responsive -->
+        <!-- Screen Sizes
+            sm: 640px
+            md: 768px
+            lg: 1024px
+            xl: 1280px
+            2xl: 1536px
+         -->
+
+        <div class="m-12 ">
+            <div class="my-12 h-24 bg-red-100 sm:bg-red-500 md:bg-green-400" ></div>
+        </div>
+
+        <!-- Flex box -->
+
+        <div class="m-10 flex justify-between">
+            <a href="">My Logo</a>
+            <ul class="flex space-x-4">
+                <li>Home</li>
+                <li>Services</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="h-screen bg-green-200 flex justify-center items-center">
+            <h1 class="font-rubik font-bold">Sky is the limit</h1>
+        </div>
+
+        <!-- grid -->
+        <div class="grid h-96 gap-4 grid-cols-3">
+            <div class="bg-indigo-200 border border-red-500 "></div>
+            <div class="bg-indigo-200 border border-red-500 row-span-4"></div>
+            <div class="bg-indigo-200 border border-red-500"></div>
+            <div class="bg-indigo-200 border border-red-500"></div>
+            <div class="bg-indigo-200 border border-red-500"></div>
+            <div class="bg-indigo-200 border border-red-500"></div>
+            <div class="bg-indigo-200 border border-red-500"></div>
+            <div class="bg-indigo-200 border border-red-500"></div>
+            <div class="bg-indigo-200 border border-red-500"></div>
+        </div>
+</body>
+</html>
+
+<!-- colors with bg waxaa ubadan 900 -->
+<!-- colors-ka aan qaadanin shade-ka waa  -->
